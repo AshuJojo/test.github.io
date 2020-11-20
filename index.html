@@ -7,18 +7,19 @@
 
 <body>
     <p>hosted</p>
-    <!--
+    
     <script>
 
         var userAgent = navigator.userAgent;
 
-        console.log(userAgent);
-
+        if (userAgent.search("Android")) {
+            redirectAndroid();
+        }
         function redirectAndroid() {
-            window.location.replace("http://www.w3schools.com");
+            window.location.replace("intent://www.youtube.com/watch?v=KSX4cwWRzis/#Intent;package=com.google.android.youtube;scheme=https;end");
         }
     </script>
-    -->
+ 
 </body>
 
 </html>
